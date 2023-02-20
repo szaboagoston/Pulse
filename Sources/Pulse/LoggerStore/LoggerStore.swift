@@ -579,7 +579,7 @@ extension LoggerStore {
         // It's safe to use Int32 because we prevent larger values from being stored
         entity.size = Int32(compressedData.count)
         entity.decompressedSize = Int32(data.count)
-        if compressedData.count <= configuration.inlineLimit {
+        if compressedData.count <= configuration.responseBodySizeLimit {
             entity.inlineData = compressedData
         } else {
             try? compressedData.write(to: makeBlobURL(for: key.hexString))
