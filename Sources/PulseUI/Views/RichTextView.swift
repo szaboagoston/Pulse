@@ -37,7 +37,7 @@ struct RichTextView<ExtraMenu: View>: View {
                 .backport.backgroundThickMaterial(enabled: isExpanded && isScrolled)
             ZStack(alignment: .bottom) {
                 textView
-                    .edgesIgnoringSafeArea(.bottom)
+//                    .edgesIgnoringSafeArea(.bottom)
                 errorView
             }
             if viewModel.isSearching {

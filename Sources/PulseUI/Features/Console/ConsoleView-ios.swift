@@ -25,7 +25,7 @@ public struct ConsoleView: View {
         contentView
             .onAppear(perform: viewModel.onAppear)
             .onDisappear(perform: viewModel.onDisappear)
-            .edgesIgnoringSafeArea(.bottom)
+//            .edgesIgnoringSafeArea(.bottom)
             .navigationBarTitle(Text("Console"))
             .navigationBarItems(
                 leading: viewModel.onDismiss.map {
