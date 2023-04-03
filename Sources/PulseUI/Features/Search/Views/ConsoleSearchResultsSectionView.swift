@@ -35,20 +35,19 @@ struct ConsoleSearchResultView: View {
 #endif
         }
         if occurrences.count > limit {
+            let total = occurrences.count > ConsoleSearchMatch.limit ? "\(ConsoleSearchMatch.limit)+" : "\(occurrences.count)"
 #if os(macOS)
-            Text("Total Results: \(occurrences.count)")
+            Text("Total Results: \(total)")
                 .font(ConsoleConstants.fontBody)
                 .foregroundColor(.secondary)
                 .padding(.top, 8)
 #else
             NavigationLink(destination: ConsoleSearchResultDetailsView(viewModel: viewModel)) {
-                HStack {
-                    Text("Total Results: ")
-                        .font(ConsoleConstants.fontBody)
-                    Text("\(occurrences.count)")
-                        .font(ConsoleConstants.fontBody)
-                        .foregroundColor(.secondary)
-                }
+                Text("Total Results: ")
+                    .font(ConsoleConstants.fontBody) +
+                Text(total)
+                    .font(ConsoleConstants.fontBody)
+                    .foregroundColor(.secondary)
             }
 #endif
         }
@@ -60,10 +59,10 @@ struct ConsoleSearchResultView: View {
     @ViewBuilder
     private func makeCell(for occurrence: ConsoleSearchOccurrence) -> some View {
         let contents = VStack(alignment: .leading, spacing: 4) {
-            Text(occurrence.scope.fullTitle + " (\(occurrence.line):\(occurrence.range.lowerBound))")
+            Text(occurrence.scope.fullTitle + " (\(occurrence.line):\(occurrence.range.lowerBound + 1))")
                 .font(ConsoleConstants.fontTitle)
                 .foregroundColor(.secondary)
-            Text(occurrence.text)
+            Text(occurrence.preview)
                 .lineLimit(3)
         }
         if #unavailable(iOS 16) {

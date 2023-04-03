@@ -77,6 +77,21 @@ extension String {
     }
 }
 
+extension String {
+    func ranges(of target: String, options: StringSearchOptions) -> [Range<String.Index>] {
+        var startIndex = target.startIndex
+        var ranges = [Range<String.Index>]()
+        let target = options.kind == .wildcard ? makeRegexForWildcard(target, rule: options.rule) : target
+        let options = String.CompareOptions(options)
+        while startIndex < endIndex,
+              let range = range(of: target, options: options, range: startIndex..<endIndex, locale: nil) {
+            ranges.append(range)
+            startIndex = range.upperBound
+        }
+        return ranges
+    }
+}
+
 extension NSString {
     func ranges(of substring: String, options: StringSearchOptions) -> [NSRange] {
         var index = 0

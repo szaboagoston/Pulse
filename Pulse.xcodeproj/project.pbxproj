@@ -82,12 +82,12 @@
 		0C7A0E00297C51CE00B4B69D /* ConsoleListOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A0DFF297C51CE00B4B69D /* ConsoleListOptions.swift */; };
 		0C7A0E02297CE71400B4B69D /* FormattersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A0E01297CE71400B4B69D /* FormattersTests.swift */; };
 		0C7A834026D1CA290082634F /* repos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF9BD825D6199A0069DB6A /* repos.json */; };
+		0C94239429B4D73E007F2784 /* ConsoleSearchOccurrenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94239329B4D73E007F2784 /* ConsoleSearchOccurrenceTests.swift */; };
 		0C9F04F92884F34A0035239F /* Pulse_Demo_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F04F82884F34A0035239F /* Pulse_Demo_macOSApp.swift */; };
 		0C9F04FD2884F34A0035239F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F04FC2884F34A0035239F /* Assets.xcassets */; };
 		0C9F05002884F34A0035239F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F04FF2884F34A0035239F /* Preview Assets.xcassets */; };
 		0C9F050C2884FA7D0035239F /* repos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF9BD825D6199A0069DB6A /* repos.json */; };
 		0CAF1D77297B0810002E2722 /* ConsoleSearchSuggestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF1D76297B0810002E2722 /* ConsoleSearchSuggestionTests.swift */; };
-		0CAF1D79297B5FF4002E2722 /* ConsoleSearchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF1D78297B5FF4002E2722 /* ConsoleSearchServiceTests.swift */; };
 		0CAF1D7B297C2040002E2722 /* ConsoleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF1D7A297C2040002E2722 /* ConsoleListViewModel.swift */; };
 		0CB17F1A2978ABBA004E33F4 /* ManagedObjectsCountObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB17F192978ABBA004E33F4 /* ManagedObjectsCountObserver.swift */; };
 		0CB34591298AA6C6009428B2 /* RichTextViewSearchToobar-ios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB34590298AA6C6009428B2 /* RichTextViewSearchToobar-ios.swift */; };
@@ -99,7 +99,7 @@
 		0CB63A15297438A600525165 /* ConsoleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A14297438A600525165 /* ConsoleSearchViewModel.swift */; };
 		0CB63A1B2974A5D200525165 /* ConsoleSearchResultsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A1A2974A5D200525165 /* ConsoleSearchResultsSectionView.swift */; };
 		0CB63A1D2974A5EB00525165 /* ConsoleSearchSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A1C2974A5EB00525165 /* ConsoleSearchSuggestionView.swift */; };
-		0CB63A212974A62700525165 /* ConsoleSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A202974A62700525165 /* ConsoleSearchService.swift */; };
+		0CB63A212974A62700525165 /* ConsoleSearchOccurrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A202974A62700525165 /* ConsoleSearchOccurrence.swift */; };
 		0CB63A232974A64500525165 /* ConsoleSearchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A222974A64500525165 /* ConsoleSearchOperation.swift */; };
 		0CB63A25297592D400525165 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A24297592D400525165 /* Parser.swift */; };
 		0CB63A2729759D2E00525165 /* ConsoleSearchToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB63A2629759D2E00525165 /* ConsoleSearchToken.swift */; };
@@ -573,13 +573,13 @@
 		0C7A0DFC297C382300B4B69D /* ConsoleShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleShareButton.swift; sourceTree = "<group>"; };
 		0C7A0DFF297C51CE00B4B69D /* ConsoleListOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleListOptions.swift; sourceTree = "<group>"; };
 		0C7A0E01297CE71400B4B69D /* FormattersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersTests.swift; sourceTree = "<group>"; };
+		0C94239329B4D73E007F2784 /* ConsoleSearchOccurrenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchOccurrenceTests.swift; sourceTree = "<group>"; };
 		0C9F04F62884F34A0035239F /* Pulse Demo macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pulse Demo macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F04F82884F34A0035239F /* Pulse_Demo_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse_Demo_macOSApp.swift; sourceTree = "<group>"; };
 		0C9F04FC2884F34A0035239F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9F04FF2884F34A0035239F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C9F05012884F34A0035239F /* Pulse_Demo_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pulse_Demo_macOS.entitlements; sourceTree = "<group>"; };
 		0CAF1D76297B0810002E2722 /* ConsoleSearchSuggestionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchSuggestionTests.swift; sourceTree = "<group>"; };
-		0CAF1D78297B5FF4002E2722 /* ConsoleSearchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchServiceTests.swift; sourceTree = "<group>"; };
 		0CAF1D7A297C2040002E2722 /* ConsoleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleListViewModel.swift; sourceTree = "<group>"; };
 		0CB17F192978ABBA004E33F4 /* ManagedObjectsCountObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectsCountObserver.swift; sourceTree = "<group>"; };
 		0CB34590298AA6C6009428B2 /* RichTextViewSearchToobar-ios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RichTextViewSearchToobar-ios.swift"; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 		0CB63A14297438A600525165 /* ConsoleSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchViewModel.swift; sourceTree = "<group>"; };
 		0CB63A1A2974A5D200525165 /* ConsoleSearchResultsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchResultsSectionView.swift; sourceTree = "<group>"; };
 		0CB63A1C2974A5EB00525165 /* ConsoleSearchSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchSuggestionView.swift; sourceTree = "<group>"; };
-		0CB63A202974A62700525165 /* ConsoleSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchService.swift; sourceTree = "<group>"; };
+		0CB63A202974A62700525165 /* ConsoleSearchOccurrence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchOccurrence.swift; sourceTree = "<group>"; };
 		0CB63A222974A64500525165 /* ConsoleSearchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchOperation.swift; sourceTree = "<group>"; };
 		0CB63A24297592D400525165 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		0CB63A2629759D2E00525165 /* ConsoleSearchToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleSearchToken.swift; sourceTree = "<group>"; };
@@ -1103,7 +1103,7 @@
 		0CB63A1F2974A61A00525165 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0CB63A202974A62700525165 /* ConsoleSearchService.swift */,
+				0CB63A202974A62700525165 /* ConsoleSearchOccurrence.swift */,
 				0C2343142978B6B900AE7CE6 /* ConsoleSearchSuggestionsService.swift */,
 				0CB63A2629759D2E00525165 /* ConsoleSearchToken.swift */,
 				0CB63A2A2975C3C700525165 /* ConsoleSearchFilter.swift */,
@@ -1552,13 +1552,13 @@
 				0CF5E5F82997DE86009FF7AE /* ConsoleTableViewModelTests.swift */,
 				0C18A667299749C30041F424 /* ConsoleTextViewModelTests.swift */,
 				0CB63A282975A94D00525165 /* ConsoleSearchTokenTests.swift */,
-				0CAF1D78297B5FF4002E2722 /* ConsoleSearchServiceTests.swift */,
 				0CAF1D76297B0810002E2722 /* ConsoleSearchSuggestionTests.swift */,
 				0CECF63129968488000F9CCD /* ConsoleSearchViewModelTests.swift */,
 				0CF5E60229980867009FF7AE /* InsightsViewModelTests.swift */,
 				0CF5E5FD2997FBC1009FF7AE /* NetworkLoggerInsightsTests.swift */,
 				0CF5E60529981A94009FF7AE /* ShareStoreViewModelTests.swift */,
 				0C63A389297A44B300F6A6A5 /* StringSearchOptionsTests.swift */,
+				0C94239329B4D73E007F2784 /* ConsoleSearchOccurrenceTests.swift */,
 				0C7A0E01297CE71400B4B69D /* FormattersTests.swift */,
 				0CF0D6C9296F18FD00EED9D4 /* MockTests.swift */,
 				0CECF64229971D7A000F9CCD /* ConsoleTestCase.swift */,
@@ -2216,7 +2216,7 @@
 				0CF0D661296F189600EED9D4 /* NetworkInspectorTransferInfoView.swift in Sources */,
 				0CFBC5AF2991DCD30038E547 /* ThickDivider.swift in Sources */,
 				0CF0D663296F189600EED9D4 /* NetworkInspectorTransactionView.swift in Sources */,
-				0CB63A212974A62700525165 /* ConsoleSearchService.swift in Sources */,
+				0CB63A212974A62700525165 /* ConsoleSearchOccurrence.swift in Sources */,
 				0CF0D614296F189600EED9D4 /* TextRendererJSON.swift in Sources */,
 				0CB63A232974A64500525165 /* ConsoleSearchOperation.swift in Sources */,
 				0C529EEF29816F51009C5555 /* ConsoleTableView.swift in Sources */,
@@ -2328,8 +2328,8 @@
 				0CF5E6042998086C009FF7AE /* InsightsViewModelTests.swift in Sources */,
 				0CF0D6CB296F18FD00EED9D4 /* ConsoleViewModelTests.swift in Sources */,
 				0CB63A292975A94D00525165 /* ConsoleSearchTokenTests.swift in Sources */,
+				0C94239429B4D73E007F2784 /* ConsoleSearchOccurrenceTests.swift in Sources */,
 				0CECF6412996E761000F9CCD /* ConsoleDataSourceTests.swift in Sources */,
-				0CAF1D79297B5FF4002E2722 /* ConsoleSearchServiceTests.swift in Sources */,
 				0CF0D6CA296F18FD00EED9D4 /* TextRendererTests.swift in Sources */,
 				0CF5E60629981A94009FF7AE /* ShareStoreViewModelTests.swift in Sources */,
 				0CF0D6CC296F18FD00EED9D4 /* MockTests.swift in Sources */,
@@ -2476,7 +2476,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Pulse-Integration-Examples-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-integration-examples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
@@ -2496,7 +2496,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Pulse-Integration-Examples-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-integration-examples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PULSE_MOCK_INCLUDED;
@@ -2594,14 +2594,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Z7876S8U2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epam.sample-app-12hdwfj019";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2620,14 +2620,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Z7876S8U2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epam.sample-app-12hdwfj019";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -2675,7 +2675,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 3.5.2;
+				MARKETING_VERSION = 3.5.5;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
@@ -2719,7 +2719,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 3.5.2;
+				MARKETING_VERSION = 3.5.5;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
@@ -2783,14 +2783,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Demo/tvOS/Preview\\ Content";
-				DEVELOPMENT_TEAM = NR8DLKJ7E6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Pulse-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.tvos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -2806,14 +2806,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Demo/tvOS/Preview\\ Content";
-				DEVELOPMENT_TEAM = NR8DLKJ7E6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Pulse-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.tvos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -2857,7 +2857,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Pulse-Demo-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.macos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
@@ -2899,7 +2899,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.Pulse-Demo-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.macos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
@@ -2917,7 +2917,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/watchOS/Extension//Preview Content\"";
-				DEVELOPMENT_TEAM = NR8DLKJ7E6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/watchOS/Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2925,7 +2925,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.PulseDemo.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2942,7 +2942,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/watchOS/Extension//Preview Content\"";
-				DEVELOPMENT_TEAM = NR8DLKJ7E6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Demo/watchOS/Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2950,7 +2950,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.PulseDemo.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2969,10 +2969,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = NR8DLKJ7E6;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Pulse_watchOS_Extension;
 				INFOPLIST_FILE = Demo/watchOS/App/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.PulseDemo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -2990,10 +2990,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
-				DEVELOPMENT_TEAM = NR8DLKJ7E6;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Pulse_watchOS_Extension;
 				INFOPLIST_FILE = Demo/watchOS/App/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.PulseDemo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.kean.pulse-demo.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

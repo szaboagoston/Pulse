@@ -34,7 +34,12 @@ extension URL {
     }
 
     static var logs: URL {
-        var url = Files.urls(for: .libraryDirectory, in: .userDomainMask).first?
+#if os(tvOS)
+        let searchPath = FileManager.SearchPathDirectory.libraryDirectory
+#else
+        let searchPath = FileManager.SearchPathDirectory.cachesDirectory
+#endif
+        var url = Files.urls(for: searchPath, in: .userDomainMask).first?
             .appending(directory: "Logs")
             .appending(directory: "com.github.kean.logger")  ?? URL(fileURLWithPath: "/dev/null")
         if !Files.createDirectoryIfNeeded(at: url) {
@@ -113,8 +118,8 @@ enum Graphics {
             kCGImageSourceCreateThumbnailFromImageAlways: true,
             kCGImageSourceCreateThumbnailFromImageIfAbsent: true,
             kCGImageSourceCreateThumbnailWithTransform: true,
-            kCGImageSourceThumbnailMaxPixelSize: targetSize] as CFDictionary
-        guard let image = CGImageSourceCreateThumbnailAtIndex(source, 0, options) else {
+            kCGImageSourceThumbnailMaxPixelSize: targetSize] as [CFString : Any]
+        guard let image = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary) else {
             return nil
         }
         return PlatformImage(cgImage: image)
