@@ -183,7 +183,7 @@ final class NetworkInspectorSummaryViewModel: ObservableObject {
         task.response.map(KeyValueSectionViewModel.makeSummary)
     }
 
-    var responseHeaders: KeyValueSectionViewModel? {
+    var responseHeaders: KeyValueSectionViewModel {
         KeyValueSectionViewModel.makeResponseHeaders(for: task.response?.headers ?? [:]) { [unowned self] in
             self.isResponseHeadearsRawLinkActive = true
         }
